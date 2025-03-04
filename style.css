@@ -1,0 +1,79 @@
+/* cargo los íconos de bootstrap icon*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/*Cargo la fuente de google fonts*/
+@import url("https://fonts.google.com/selection/embed");
+
+/*Defino los colores y las fuentes*/
+:root{
+    --primary-color: #262629; /*Negro*/
+    --secondary-color: #e6e6e6; /*Gris*/
+    --bg-color: #ededed; /*Blanco, color del background*/
+    --ff-text: "Inter", sans-serif;  /*Familia de fuentes*/
+}
+
+/*Normalización (márgenes y alineación)*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-text);
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*Contenedor Principal*/
+main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0,0,0);
+    width: 350px;
+    text-align: center;
+}
+
+/*Título*/
+
+h1{
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+/*formulario*/
+form{ 
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+form input{
+    flex: 1;
+    padding: 8px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+  
+form button:hover {
+    background-color: #1a1a1c;
+}
+
